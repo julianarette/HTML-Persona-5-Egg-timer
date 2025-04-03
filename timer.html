@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time is ticking..</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/Dark_Icon.png">
+</head>
+
+
+<body> <audio id="alarmSound" src="/snd/yoosung.mp3"></audio>
+
+    <audio id="butterflyKiss" src="/snd/Butterfly Kiss.mp3" preload="auto" loop muted></audio>
+
+    <div class="Tbox">
+
+        <div class="timer-container">
+            <img src="img/TYT.gif" alt="Take Your Time" class="take-your-time">
+            <p class="take-your-time-text">Take your time</p>
+        </div>
+        
+        <h1 id="timer">00:00</h1>
+
+        <div id="timeUpButtons" style="display: none;">
+            <div class="button-container">
+                <div class="button-wrapper">
+                    <button onclick="snoozeTimer()" class="snooze-button">
+                        <img src="img/snooze.png" alt="Snooze">
+                    </button>
+                    <span class="button-text">Snooze</span>
+                </div>
+                <div class="button-wrapper">
+                    <button onclick="closePage()" class="close-button">
+                        <img src="img/close.png" alt="Close">
+                    </button>
+                    <span class="button-text">Close</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

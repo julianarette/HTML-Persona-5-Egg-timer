@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+body {
+    font-family: "Black Han Sans", sans-serif;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 5rem;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+h2{
+    position: absolute;
+    font-size: 2.5rem;
+    top: 20%;
+    margin-bottom: 20%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('img/HomeBG.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.Mbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('img/MainBG.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.Tbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('img/WaitingBG.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.button-container {
+    display: flex;
+    gap: 30px; /* Increased spacing for better alignment */
+}
+
+.ok-button {
+    width: 120px; /* Slightly bigger */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, rotate 0.1s ease-in-out; /* Smooth movement */
+    display: block;
+}
+
+.ok-button:hover {
+    transform: translate(5px, -5px) rotate(-5deg) scale(1.1); /* Moves slightly right, up, rotates */
+}
+
+.morg-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.morg-button img {
+    width: 100; /* Bigger button */
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.morg-button:hover img {
+    transform: scale(1.15); /* Slightly bigger on hover */
+}
+
+.morg-button span {
+    margin-top: 5px;
+    color: white;
+    font-size: 1.4rem; /* Bigger text */
+    font-weight: bold;
+}
+
+.futaba-img {
+    position: fixed;
+    bottom: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    width: 200px; /* Slightly bigger */
+    height: auto;
+    opacity: 0.9; /* Slight transparency */
+}
+
+.chatbox-container {
+    position: fixed;
+    bottom: 40px; /* Adjusted for better alignment */
+    left: 200px; /* Adjust to align next to Futaba */
+    width: 550px; /* Increased size */
+}
+
+.chatbox-img {
+    width: 100%; /* Bigger for text fit */
+    height: auto;
+}
+
+.chatbox-text {
+    position: absolute;
+    top: 45%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px; /* Bigger text */
+    text-align: center;
+    width: 95%; /* More space for text */
+    font-family: "Black Han Sans", sans-serif;
+}
+
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Space between gif and timer */
+}
+
+.take-your-time {
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+}
+
+.take-your-time-text {
+    color: white;
+    font-size: 2rem;
+    margin-top: 10px;
+    font-family: "Black Han Sans", sans-serif;
+}
+
+#timeUpButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-container {
+    display: flex;
+    gap: 60px; /* Space between buttons */
+    justify-content: center;
+    align-items: center;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100px; /* Set fixed width for proper alignment */
+}
+
+.snooze-button, .close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.snooze-button img {
+    width: 65px; /* Smaller snooze button */
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.close-button img {
+    width: 100  px; /* Bigger close button */
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.snooze-button:hover img, .close-button:hover img {
+    transform: scale(1.1);
+}
+
+.button-text {
+    margin-top: 5px;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    display: block; /* Ensures full width alignment */
+}
+

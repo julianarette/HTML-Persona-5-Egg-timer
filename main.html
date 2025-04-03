@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boiling?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/Dark_Icon.png">
+</head>
+
+<body>
+
+    <audio id="butterflyKiss" src="/snd/Butterfly Kiss.mp3" preload="auto" loop muted></audio>
+
+    <div class="Mbox">
+
+        <h2>Which egg are you boiling?</h2>
+
+        <div class="button-container">
+            <button class="morg-button" onclick="startTimer(4)">
+                <img src="img/morg.png" alt="Soft Boiled">
+                <span>Soft Boiled</span>
+            </button>
+            <button class="morg-button" onclick="startTimer(6)">
+                <img src="img/morg.png" alt="Jammy Boiled">
+                <span>Jammy Boiled</span>
+            </button>
+            <button class="morg-button" onclick="startTimer(8)">
+                <img src="img/morg.png" alt="Medium Boiled">
+                <span>Medium Boiled</span>
+            </button>
+        </div>
+
+        <img src="img/FTB.png" alt="Futaba" class="futaba-img">
+
+        <div class="chatbox-container">
+            <img src="img/chtBox.png" alt="Chatbox" class="chatbox-img">
+            <div class="chatbox-container">
+                <img src="img/chtBox.png" alt="Chatbox" class="chatbox-img">
+                <p class="chatbox-text">Remember to not put a lid when you boil!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
